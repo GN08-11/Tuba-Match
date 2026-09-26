@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuba Match </title>
+  <!-- Page metadata and title -->
+  <meta charset="UTF-8">
+  <title>Tuba Match</title>
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <!-- Main title -->
+  <h1>Tuba Match</h1>
+
+  <!-- Player setup UI: asks how many players -->
+  <div id="playerSetup">
+    <!-- Label for the input -->
+    <label for="playerCountInput">How many players?</label>
+    <!-- Number input for player count -->
+    <input type="number" id="playerCountInput" min="1" max="10">
+    <!-- Button to start the game -->
+    <button id="startGameBtn">Start Game</button>
+  </div>
+
+  <!-- Message box: shows game messages (turns, results, winner, etc.) -->
+  <div id="messageBox" class="message-box">
+    <!-- Initial message -->
+    Enter number of players and press "Start Game" to begin.
+  </div>
+
+  <!-- Game board: where the cards will appear -->
+  <div id="gameBoard" class="game-board"></div>
+
+  <!-- Link to external JavaScript file (loaded last so HTML exists first) -->
+  <script src="script.js"></script>
 </body>
 </html>

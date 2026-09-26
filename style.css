@@ -1,0 +1,79 @@
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #1e1e2f; /* dark background */
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Title styling */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Player setup container */
+#playerSetup {
+  width: 400px;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+}
+
+/* Player count input styling */
+#playerCountInput {
+  width: 80px;
+  font-size: 18px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+/* Start button styling */
+#startGameBtn {
+  font-size: 18px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Message box styling */
+.message-box {
+  width: 400px;
+  margin: 10px auto 20px auto;
+  padding: 15px;
+  background: #2e2e45; /* slightly lighter than background */
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: center;
+  min-height: 40px; /* keeps box from shrinking too small */
+}
+
+/* Game board grid */
+.game-board {
+  width: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 10px; /* space between cards */
+}
+
+/* Card styling */
+.card {
+  width: 90px;
+  height: 90px;
+  background: #3a3a55; /* card back color */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s; /* smooth color change */
+}
+
+/* Flipped card styling (shows emoji) */
+.card.flipped {
+  background: #ffffff; /* white when flipped */
+  color: #000000;      /* black emoji color */
+}
