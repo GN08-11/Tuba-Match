@@ -72,7 +72,7 @@ function startPlayerTurn() {
   flippedCards = [];
   matched = 0;
 
-  // Define card values (each emoji appears twice)
+  // Define card values (each card appears twice)
   cards = ["Bb","Bb","C","C","D","D","Eb","Eb","F","F","G","G","A","A"];
 
   // Shuffle the cards randomly
